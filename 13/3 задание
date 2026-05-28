@@ -1,0 +1,5 @@
+path = input()
+parts = path.split('\\')  # разделяем по символу \
+
+for part in parts:
+    print(part)
