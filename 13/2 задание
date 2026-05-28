@@ -1,0 +1,8 @@
+n = int(input())
+all_chars = []
+
+for _ in range(n):
+    s = input()
+    all_chars.extend(s)  # добавляем все символы строки
+
+print(all_chars)
