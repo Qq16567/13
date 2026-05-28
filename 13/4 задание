@@ -1,0 +1,17 @@
+
+ip_string = input()
+parts = ip_string.split('.')
+
+if len(parts) != 4:
+    print("НЕТ")
+else:
+    is_valid = True
+    for part in parts:
+        if not part.isdigit():  # проверяем, что целое неотрицательное
+            is_valid = False
+            break
+        num = int(part)
+        if num < 0 or num > 255:
+            is_valid = False
+            break
+    print("ДА" if is_valid else "НЕТ")
